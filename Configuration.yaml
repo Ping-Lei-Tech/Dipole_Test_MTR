@@ -1,0 +1,46 @@
+# Configuration for MRW-9000 Dipole Test
+# Release notes: Initial Release
+# Date: 4/15/2015
+# Harness P/N: 112052
+Name: Dipole Test - MRW-9000
+Version: v1.0.0
+Date: 4.14.2025
+Copyright: Terran Orbital
+User_Entry: False                          # True or False
+Log_Title: MRW-111181 Dipole Test Log
+Loop_Number: 1
+Loop_Delay: 10                            # 10 sec
+Debug: False                              # True or False
+Test_Equipment:
+  Magnetometer_COM: COM3
+  Magnetometer_Baud_Rate: '9600'
+  Magnetometer_Write_Delay: '0.5'         # 0.5 sec
+  Power_Supply_Model_A: 5748A
+  Power_Supply_Model_B: 5768A
+  Power_Supply_A_Resource_Name: USB0::0x0957::0x9907::US15H9224P::INSTR
+  Power_Supply_B_Resource_Name: USB0::0x0957::0xA507::US23J6669R::INSTR
+  Power_Supply_Timeout: '2000'            # 2 sec
+  Power_Supply_Voltage: :VOLT:LEV 66
+  Power_Supply_Current_Limit: ISET 1      # Current Limit 1A
+  DAQ_Model: DAQ970A
+  DAQ_Resource_Name: USB0::0x2A8D::0x5101::MY58015854::INSTR
+  DAQ_Timeout: '2000'                     # 2 sec
+  DAQ_Digitize_Config_A: ACQ:CURR:DC 0.1,500,0.001,(@121)  # Range:100mA; Count:500; Timer:1ms
+  DAQ_Digitize_Config_B: ACQ:CURR:DC 0.1,500,0.001,(@122)  # Range:100mA; Count:500; Timer:1ms
+Test_Constant:
+  MI: '2222'
+  R0_A: '1000'
+  T0_A: '25'
+  R0_B: '1243'
+  T0_B: '26'
+  X_DISTANCE_MAGNETOMETER: '1'            # m
+  T_TARGET: '25'                          # C
+  ALPHA: '0.00393'
+  L_WINDABLE_LENGTH: '0.28575'            # Not Used
+  CURRENT_AVERAGE_COUNT: '19'
+  MAGNET_AVERAGE_COUNT: '10'
+  Data_Decimal_Num: 3
+Test_Limits:
+  Dipole_Moment_A_Min: '24'
+  Dipole_Moment_B_Min: '20'
+  Dipole_Moment_AB_Min: '30'
