@@ -1,0 +1,12 @@
+V1.0.0 
+Date: 4/10/2025
+1. Initial Release
+
+V1.0.1 
+Date: 5/15/2025
+1. Separate and configure the power supply A & B to CC mode (A: 0.066A; B:0.05A). 
+2. Remove Min and Max values from the magnetometer data set. 
+3. Add delay before current and voltage measurements.
+4. Log average current.
+5. Log average magnet field.
+
