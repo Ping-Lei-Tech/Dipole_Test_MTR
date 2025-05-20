@@ -3,10 +3,13 @@ Date: 4/10/2025
 1. Initial Release
 
 V1.0.1 
-Date: 5/15/2025
-1. Separate and configure the power supply A & B to CC mode (A: 0.066A; B:0.05A). 
+Date: 5/16/2025
+1. Configure the Power Supply A & B to CC mode (A: 0.066A; B:0.05A). 
 2. Remove Min and Max values from the magnetometer data set. 
 3. Add delay before current and voltage measurements.
-4. Log average current.
-5. Log average magnet field.
-6. Move test data from local to N drive at the end of test.
+4. Add input voltage (60V to 72V) to test report.
+5. Add coil A current (0.063A to 0.07A) to test report.  
+6. Add coil B current (0.047A to 0.053A) to test report.  
+7. Log average current.
+8. Log average magnet field.
+9. Move test data from local to N drive at the end of test.
