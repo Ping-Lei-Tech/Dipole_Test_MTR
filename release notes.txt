@@ -9,4 +9,4 @@ Date: 5/15/2025
 3. Add delay before current and voltage measurements.
 4. Log average current.
 5. Log average magnet field.
-
+6. Move test data from local to N drive at the end of test.
