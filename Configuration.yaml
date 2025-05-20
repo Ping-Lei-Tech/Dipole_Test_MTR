@@ -1,13 +1,13 @@
-# Configuration for MRW-9000 Dipole Test
+# Configuration for MTR Dipole Test
 # Release notes: Initial Release
 # Date: 5/16/2025
 # Harness P/N: 143230
-Name: Dipole Test - MRW-9000
+Name: Dipole Test - MTR
 Version: v1.0.1
 Date: 5.16.2025
 Copyright: Terran Orbital
 User_Entry: False                         	# True or False
-Log_Title: MRW-111181 Dipole Test Log
+Log_Title: MTR-111181 Dipole Test Log
 Loop_Number: 1
 Loop_Delay: 10                            	# sec
 Debug: False                              	# True or False
